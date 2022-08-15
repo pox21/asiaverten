@@ -1,0 +1,43 @@
+.section-about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--color-smoky);
+
+  @include mobile {
+    padding: 20px 0;
+  }
+
+  &__container {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+  & .left-col, & .right-col {
+    width: 50%;
+
+    @include mobile {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  & .left-col {
+    padding: 50px;
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}

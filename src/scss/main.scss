@@ -1,0 +1,41 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключение маленьких компонентов страницы
+@import "./components/nav";
+@import "./components/form-search";
+@import "./components/logo";
+@import "./components/language";
+@import "./components/social";
+
+// подключения компонентов header footer
+@import "./components/header";
+@import "./components/footer";
+@import "./components/footer-nav";
+
+
+// подключения компонентов главной страницы
+@import "./components/news-slider";
+@import "./components/section-hero";
+@import "./components/section-best-deals";
+@import "./components/tabs";
+@import "./components/section-video";
+@import "./components/section-mc";
+@import "./components/section-art";
+@import "./components/section-about";
+@import "./components/section-faq";
+
+// подключения компонентов страниц
+@import "./components/mc-block";
+@import "./components/books";
+@import "./components/book";
+@import "./components/discounts";
+@import "./components/card-hero";
+@import "./components/card-slider";
+@import "./components/card-main";
+
+
+

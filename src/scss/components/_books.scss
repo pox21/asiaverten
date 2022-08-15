@@ -1,0 +1,29 @@
+.books {
+  padding: 70px 0;
+
+  @include mobile {
+    padding: 20px 0;
+  }
+
+  &__list {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    grid-gap: 50px 120px;
+
+    justify-content: center;
+
+    @include tablet {
+      grid-gap: 50px;
+      grid-template-columns: repeat(2, 330px);
+    }
+
+    @include mobile {
+      grid-template-columns: minmax(260px, 300px);
+      padding: 20px 10px;
+      grid-gap: 30px;
+    }
+  }
+
+
+}

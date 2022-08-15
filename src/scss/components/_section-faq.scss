@@ -1,0 +1,97 @@
+.section-faq {
+  padding-top: 65px;
+  padding-bottom: 100px;
+
+  @include mobile {
+    padding: 30px 0;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--grid-gap);
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+}
+
+.faq-item {
+  padding: 60px 40px;
+  background-color: var(--color-martinique);
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    padding: 20px;;
+  }
+
+  &:nth-child(4) {
+    grid-column: 2 span;
+
+    @include tablet {
+      grid-column: auto;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-family: 'Lenora';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 23px;
+    @include tablet {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  &__more {
+    margin: auto 0;
+    display: block;
+    padding: 18px 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: var(--color-bastille);
+    transition: background-color 0.3s ease-in-out;
+    outline: none;
+    text-align: center;
+
+    @include mobile {
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    &:hover {
+      background-color: var(--color-steel-gray);
+    }
+
+    &:focus {
+      background-color: var(--color-steel-gray);
+    }
+  }
+}

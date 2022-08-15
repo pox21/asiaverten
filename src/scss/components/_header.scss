@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+  background-color: var(--color-bastille);
+  padding: 20px 0;
+
+  @include tablet {
+    padding: 10px 0;
+  }
+
+  &__container {
+    @include flex-v-center;
+  }
+
+  &__nav {
+    margin-right: 65px;
+  }
+}

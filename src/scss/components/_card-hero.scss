@@ -1,0 +1,73 @@
+.card-hero {
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__info {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__info-desc {
+    margin: 10px 0;
+    max-width: 385px;
+    padding-left: 28px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__info-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  &__info-text {
+    padding-left: 58px;
+    margin-bottom: 17px;
+  }
+
+  &__info-item {
+    max-height: 125px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-smoky);
+    text-align: center;
+    overflow: hidden;
+
+    span {
+      display: block;
+      width: 70%;
+    }
+
+    img {
+      width: 30%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+}
+
+.card-title {
+  margin: 0;
+  padding-left: 28px;
+  font-family: 'Lenora';
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.card-subtitle {
+  padding-left: 28px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}

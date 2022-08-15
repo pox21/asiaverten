@@ -1,0 +1,114 @@
+.section-art {
+  padding: 100px 0 70px;
+
+  @include tablet {
+    padding: 50px 0 20px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    grid-gap: 25px;
+
+    @include tablet {
+      grid-template-columns: minmax(340px, 1fr) 1fr;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__imgs {
+    position: relative;
+    grid-row: 2 span;
+    height: 550px;
+    width: 100%;
+
+    @include mobile {
+      height: 420px;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 450px) {
+      height: 320px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    border-radius: 100%;
+
+    &_first {
+      right: 0;
+      top: 0;
+      width: 361px;
+      @include tablet {
+        width: 70%;
+        top: 40px;
+        right: 20px;
+      }
+
+      @include mobile {
+        top: 0;
+        right: auto;
+        left: 0;
+      }
+    }
+
+    &_second {
+      left: 0;
+      bottom: 0;
+      width: 327px;
+      @include tablet {
+        width: 60%;
+        left: 30px;
+        bottom: 40px;
+      }
+
+      @include mobile {
+        right: 0;
+        left: auto;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__text-wrapper {
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+      @include tablet {
+        margin-bottom: 0;
+      }
+
+      @include mobile {
+        order: -1;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    margin: 0 0 24px;
+    max-width: 520px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    
+    @include tablet {
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    @include mobile {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+
+}

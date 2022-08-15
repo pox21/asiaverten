@@ -1,0 +1,30 @@
+.card-main {
+
+}
+
+.grid {
+  // display: flex;
+  // flex-wrap: wrap;
+  // grid-gap: 84px 50px;
+
+  &__item {
+    width: 51%;
+
+    &--width2 {
+      width: 40%;
+    }
+  }
+
+  &__item-wrapper {
+    max-width: 100%;
+    height: auto;
+    background-color: var(--color-storm);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

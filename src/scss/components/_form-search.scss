@@ -1,0 +1,15 @@
+.form-search {
+  @include flex-v-center;
+
+
+  &__label {
+    display: none;
+  }
+
+  &__btn {
+    @include bg-img-styles;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/search_icon.svg');
+  }
+}

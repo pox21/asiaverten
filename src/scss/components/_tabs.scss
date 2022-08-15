@@ -1,0 +1,37 @@
+.tabs {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__btn {
+    padding: 8px 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: inherit;
+    background-color: var(--color-martinique);
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+
+    @include mobile {
+      padding: 8px 12px;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    &:hover {
+      background-color: #5d5374;
+    }
+
+    &:focus {
+      background-color: #5d5374;
+    }
+
+    &_active {
+      background-color: #5d5374;
+    }
+  }
+}

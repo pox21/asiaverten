@@ -1,0 +1,27 @@
+.logo {
+  display: block;
+  width: 158px;
+  height: 52px;
+
+  &_mobile {
+    display: none;
+
+    @include tablet {
+      display: block;
+      height: 30px;
+      width: 115px;
+      margin-right: auto;
+    }
+  }
+
+  &_big {
+    width: 180px;
+    height: 60px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
